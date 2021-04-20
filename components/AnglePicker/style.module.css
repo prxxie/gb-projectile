@@ -1,0 +1,21 @@
+.Slider {
+  display: block;
+  width: 200px;
+  height: 200px;
+  cursor: ns-resize;
+}
+
+.SliderCircle,
+.SliderBar {
+  fill: transparent;
+}
+
+.SliderCircle {
+  stroke: #00b0ff;
+}
+
+.SliderBar {
+  stroke: #607d8b;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0;
+}
