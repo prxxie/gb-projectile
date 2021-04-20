@@ -25,9 +25,12 @@ export default function Home() {
       .setWind(wind)
       .setWindAngle(windAngle)
 
-    const currentPow = listAngle.filter(n => n.angle == angle)[0]
+    const result = projectile.autoCalculate()
+
+    setListAngle(result)
+
+    const currentPow = result.filter(n => n.angle == angle)[0]
     setPower(currentPow ? currentPow.power : 0)
-    setListAngle(projectile.autoCalculate())
 
   }, [wind, windAngle, angle, distance, projectile]);
 
